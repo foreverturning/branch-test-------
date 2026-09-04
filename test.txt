@@ -25,3 +25,4 @@ vscode
 # 从不同版本切换 -> 分支branch
 # git branch 0.2
 # git branch 0.3
+# 在主分支上
