@@ -36,3 +36,12 @@ vscode
 # 可以将主流和分流通过 ```git merge``` 合并在一起
 # git merge 后，通过 ```git tag```  打标签生成 1.1版本（从1.0）
 # 多人合作使用 merge 的话， 需要一个 ```开发手册``` 
+
+# 上传github，新建仓库后照着说明进行，并添加 readme.md
+echo "# branch-test-------" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/foreverturning/branch-test-------.git
+git push -u origin main
