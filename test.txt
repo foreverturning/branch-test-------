@@ -23,3 +23,4 @@ vscode
 # reset 回退了，也把后边的清空了（还可以用 git reflog 可以看到并切换）
 
 # 从不同版本切换 -> 分支branch
+git branch 0.2
