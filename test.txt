@@ -3,3 +3,16 @@ v0.1
 3
 4
 vscode
+# cd ..
+# cd ./ttt
+# git config --global user.name "xxx"
+# git config --global user.email "xxx"
+# git config --global --list (查看全部global信息)
+# 保存在用户名的 ```.gitconfig``` 中
+
+# git add .
+# git commit (a/i -> esc -> :wq)
+# git commit -m "fix(test) : change content" (风格规范)
+# git log
+
+# git reset --hard 哈希值id
