@@ -15,4 +15,11 @@ vscode
 # git commit -m "fix(test) : change content" (风格规范)
 # git log
 
-# git reset --hard 哈希值id
+# Git History Diff (vscode插件)
+# 菜鸟教程
+
+# git reset --hard 哈希值id （回退版本）（不轻易使用）
+# hard，硬重置； soft模式； mixed模式（默认）
+# reset 回退了，也把后边的清空了（还可以用 git reflog 可以看到并切换）
+
+# 从不同版本切换 -> 分支branch
