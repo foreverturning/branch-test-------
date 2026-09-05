@@ -46,4 +46,17 @@ git branch -M main （更改分支名称，master改成了main）
 git remote add origin https://github.com/foreverturning/branch-test-------.git
 git push -u origin main （上传）
 git push -u origin 分支名称
+
 git push
+若 没有绑定 远程分支， 则使用 git push -u origin 分支名称 进行远程绑定
+git push -u origin forever
+
+`````
+fatal: The current branch forever has no upstream branch.        
+To push the current branch and set the remote as upstream, use   
+
+    git push --set-upstream origin forever
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.  
+`````
