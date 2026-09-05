@@ -1,0 +1,27 @@
+Fork，类似于branch，复制到自己的仓库里
+
+自己仓库中的项目： code，http链接
+
+用vscode打开一个文件夹，新建终端，
+git clone `Fork到自己仓库的链接` . （第3行）（空格 + .）
+`https://github.com/foreverturning/re01-one.git .`
+
+这时，
+git remote -v
+只有自己仓库的链接
+origin  https://github.com/foreverturning/re01-one.git (fetch)
+origin  https://github.com/foreverturning/re01-one.git (push)
+
+在去原始项目复制链接（同第3行）
+git remote add upstream + 链接
+git remote add upstream https://github.com/lovekwc/re01-one.git
+添加上游链接
+
+再 git remote -v
+origin  https://github.com/foreverturning/re01-one.git (fetch)
+origin  https://github.com/foreverturning/re01-one.git (push)
+upstream        https://github.com/lovekwc/re01-one.git (fetch)
+upstream        https://github.com/lovekwc/re01-one.git (push)
+
+若给别人加功能，可以先创建一个分支
+git checkout -b kwc
