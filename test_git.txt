@@ -31,7 +31,7 @@ vscode
 # git checkout 0.2
 # git checkout 0.3
 # git checkout master
-# 可以在主流（master， -a）上写代码，也可以在支流上同时写
+# 可以在主流（master）上写代码，也可以在支流上同时写
 
 # 可以将主流和分流通过 ```git merge``` 合并在一起
 # git merge 后，通过 ```git tag```  打标签生成 1.1版本（从1.0）
@@ -45,3 +45,18 @@ git commit -m "first commit"
 git branch -M main （更改分支名称，master改成了main）
 git remote add origin https://github.com/foreverturning/branch-test-------.git
 git push -u origin main （上传）
+git push -u origin 分支名称
+
+git push
+若 没有绑定 远程分支， 则使用 git push -u origin 分支名称 进行远程绑定
+git push -u origin forever
+
+`````
+fatal: The current branch forever has no upstream branch.        
+To push the current branch and set the remote as upstream, use   
+
+    git push --set-upstream origin forever
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.  
+`````

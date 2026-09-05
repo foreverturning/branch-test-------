@@ -1,0 +1,43 @@
+Fork，类似于branch，复制到自己的仓库里
+
+自己仓库中的项目： code，http链接
+
+用vscode打开一个文件夹，新建终端，
+git clone `Fork到自己仓库的链接` . （第3行）（空格 + .）
+`https://github.com/foreverturning/re01-one.git .`
+
+这时，
+git remote -v
+只有自己仓库的链接
+origin  https://github.com/foreverturning/re01-one.git (fetch)
+origin  https://github.com/foreverturning/re01-one.git (push)
+
+在去原始项目复制链接（同第3行）
+git remote add upstream + 链接
+git remote add upstream https://github.com/lovekwc/re01-one.git
+添加上游链接
+
+再 git remote -v
+origin  https://github.com/foreverturning/re01-one.git (fetch)
+origin  https://github.com/foreverturning/re01-one.git (push)
+upstream        https://github.com/lovekwc/re01-one.git (fetch)
+upstream        https://github.com/lovekwc/re01-one.git (push)
+
+若给别人加功能，可以先创建一个分支
+git checkout -b forever (创建并切换至 forever 分支)
+
+去原始仓库，Pull requests
+New pull request
+compare across forks
+base : 根源 （左侧）
+head ：自己的分支（右侧）
+
+Created pull request（pr信息base <- head）
+
+
+
+若无绿色对号，可能是对方的 main 提交了新的commit，导致版本不一致
+这时需要更新本地版本
+git fetch upstream
+git merge upstream/main （把远程的最新代码合并到自己的分支中）
+再 git push
