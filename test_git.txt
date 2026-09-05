@@ -46,3 +46,4 @@ git branch -M main （更改分支名称，master改成了main）
 git remote add origin https://github.com/foreverturning/branch-test-------.git
 git push -u origin main （上传）
 git push -u origin 分支名称
+git push
